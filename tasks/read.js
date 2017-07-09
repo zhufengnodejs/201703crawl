@@ -2,7 +2,7 @@ let request = require('request');
 let iconv = require('iconv-lite');
 let cheerio = require('cheerio');
 // model=模型 module=模块
-module.exports = function (url, callback) {
+function read(url, callback) {
   request({url, encoding: null}, function (err, res, body) {
     //如果没有错误并且响应的状态码为200的时候
     if (!err && res.statusCode == 200) {
@@ -27,6 +27,8 @@ module.exports = function (url, callback) {
 }
 
 let url = 'http://top.baidu.com/buzz?b=26';
-module.exports(url, function (err, movies) {
+read(url, function (err, movies) {
   console.log(movies);
 });
+
+module.exports = read;
