@@ -14,5 +14,9 @@ async.waterfall([
      write(movies,callback);
   }
 ],function(err,result){
+  console.log(result);
   console.log('全部任务完成!');
 });
+// __v: 0, 版本号 解决并发修改问题
+// 0  -> 1000
+// 1000  ->
