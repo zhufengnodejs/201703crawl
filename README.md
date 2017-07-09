@@ -66,4 +66,5 @@ node server.js
 因为我们希望我们的服务在后台运行
 ```
 npm install pm2 -g
+pm2 start server.js --name 'crawl'
 ```
