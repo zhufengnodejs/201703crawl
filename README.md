@@ -21,5 +21,18 @@ ssh root@120.27.250.23
 apt-get update
 ```
 
+### 安装 npm
+```
+apt-get install npm
+```
 
+### 安装node的版本管理器
+```
+npm install n -g
+```
+
+### 安装 node
+```
+n 7.5
+```
 
