@@ -19,6 +19,7 @@ function read(url, callback) {
            name:$this.text(),//a标签里的文本就是电影的名字
            url:$this.attr('href')//a标签的href属性就是超链接
          }
+         console.log(`读到电影:${movie.name}`);
          movies.push(movie);
       });
       callback(err,movies);
@@ -26,9 +27,9 @@ function read(url, callback) {
   });
 }
 
-let url = 'http://top.baidu.com/buzz?b=26';
+/*let url = 'http://top.baidu.com/buzz?b=26';
 read(url, function (err, movies) {
   console.log(movies);
-});
+});*/
 
 module.exports = read;
