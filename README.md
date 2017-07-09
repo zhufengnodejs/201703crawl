@@ -45,3 +45,18 @@ apt-get install mongodb
 ```
 apt-get install git
 ```
+
+### 下载并安装项目
+```
+git clone https://github.com/zhufengnodejs/201703crawl.git
+cd 201703crawl
+npm install
+
+cd tasks
+node main.js
+ctrl+c退出
+
+cd ..
+node server.js
+```
+然后就可以通过浏览器访问我们的服务器
