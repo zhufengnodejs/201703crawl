@@ -36,3 +36,12 @@ npm install n -g
 n 7.5
 ```
 
+### 安装 mongodb
+```
+apt-get install mongodb
+```
+
+### 安装git
+```
+apt-get install git
+```
